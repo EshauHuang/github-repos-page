@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from "./globalStyle";
+
+import { useEffect, useState } from "react";
+
+import SiteRepos from "./components/SiteRepos";
+import SiteHeader from "./components/SiteHeader";
 
 function App() {
+  const [scroll, setScroll] = useState(0);
+  useEffect(() => {
+    const debounce = (fn, delay) => {
+      let timer;
+      return () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          fn();
+        }, delay);
+      };
+    };
+    window.onscroll = () => {
+      const handleScroll = debounce(() => {
+        setScroll(Math.ceil(window.pageYOffset));
+      }, 60);
+      handleScroll();
+    };
+
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <SiteHeader scroll={scroll >= 330 ? 330 : scroll} />
+      <SiteRepos scroll={scroll} />
+    </>
   );
 }
 
