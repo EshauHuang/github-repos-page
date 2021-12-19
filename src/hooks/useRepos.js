@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useState, useRef } from "react";
+import { useEffect, useCallback, useState } from "react";
 import { getRepos } from "../webAPI";
 
 const useRepos = (reposPage) => {
