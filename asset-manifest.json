@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/github-repos-page/static/js/main.177f5468.chunk.js",
+    "main.js.map": "/github-repos-page/static/js/main.177f5468.chunk.js.map",
+    "runtime-main.js": "/github-repos-page/static/js/runtime-main.9c6c3c0b.js",
+    "runtime-main.js.map": "/github-repos-page/static/js/runtime-main.9c6c3c0b.js.map",
+    "static/css/2.679831fc.chunk.css": "/github-repos-page/static/css/2.679831fc.chunk.css",
+    "static/js/2.8a17929d.chunk.js": "/github-repos-page/static/js/2.8a17929d.chunk.js",
+    "static/js/2.8a17929d.chunk.js.map": "/github-repos-page/static/js/2.8a17929d.chunk.js.map",
+    "index.html": "/github-repos-page/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/github-repos-page/static/css/2.679831fc.chunk.css.map",
+    "static/js/2.8a17929d.chunk.js.LICENSE.txt": "/github-repos-page/static/js/2.8a17929d.chunk.js.LICENSE.txt",
+    "static/media/banner.7d053055.jpg": "/github-repos-page/static/media/banner.7d053055.jpg",
+    "static/media/bg.e39115e3.jpg": "/github-repos-page/static/media/bg.e39115e3.jpg",
+    "static/media/city.8f219d5f.png": "/github-repos-page/static/media/city.8f219d5f.png",
+    "static/media/comet.ec03e081.png": "/github-repos-page/static/media/comet.ec03e081.png",
+    "static/media/mountain.8949882a.png": "/github-repos-page/static/media/mountain.8949882a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c6c3c0b.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.8a17929d.chunk.js",
+    "static/js/main.177f5468.chunk.js"
+  ]
+}
